@@ -35,6 +35,7 @@ flam-edge-viewer/
 └── README.md
 
 🖼️ Screenshots
+
 [Watch web demo video](./screenshots/Screen%20Recording%202025-11-14%20023519.mp4)
 
 [Web demo](./screenshots/Screenshot%202025-11-14%20023743.png)
