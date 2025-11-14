@@ -1,7 +1,6 @@
 🔥 Flam – Real-Time Edge Detection Viewer
 
 Android NDK + OpenCV (C++) + Web (OpenCV.js)
-
 This project implements a real-time edge detection viewer for both Android and Web, as required in the Flam R&D Intern assignment.
 
 📌 Project Overview
@@ -9,6 +8,7 @@ This project implements a real-time edge detection viewer for both Android and W
 The system captures camera frames (Android/Web), sends them through a native/JS pipeline, performs Canny edge detection, and displays the processed frames in real-time using OpenGL ES (Android) or Canvas (Web).
 
 📂 Repository Structure
+
 flam-edge-viewer/
 │
 ├── android/
@@ -34,60 +34,40 @@ flam-edge-viewer/
 
 🚀 Features
 ✅ Android Native (Kotlin + NDK)
-
 Camera2 API for high-speed frame capture
-
 Converts YUV_420_888 → NV21 (custom converter)
-
 Sends bytes to JNI (native-lib.cpp)
-
 Uses OpenCV C++ (cvtColor, Canny)
-
 Returns processed RGBA data back to Kotlin
-
 Displays on screen with OpenGL ES 2.0 (GLRenderer)
-
 Real-time FPS performance
 
 ✅ Web App (OpenCV.js + TypeScript)
-
 Built using Vite + TS
-
 Uses camera (getUserMedia) or file upload
-
 Converts HTML ImageData into OpenCV.Mat
 
 Performs:
 
 RGBA → Grayscale
-
 Canny edge detection
-
 RGBA output rendering
-
 Live canvas preview
-
 Option to download processed output
 
 🛠️ Tech Stack
 Android
 
 Kotlin
-
 Camera2 API
-
 OpenGL ES 2.0
-
 Android NDK (C++)
-
 OpenCV 4.x native C++
 
 Web
 
 Vite + TypeScript
-
 OpenCV.js (WASM)
-
 HTML Canvas
 
 📦 Setup Instructions
@@ -154,3 +134,5 @@ Camera/File → Canvas → ImageData → OpenCV.js
     → Canvas output
 
 🖼️ Screenshots
+[Watch demo video](.)
+
