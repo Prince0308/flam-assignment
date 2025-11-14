@@ -135,5 +135,6 @@ Camera/File → Canvas → ImageData → OpenCV.js
     → Canvas output
 
 🖼️ Screenshots
-[Watch demo video](./screenshots/Screen%20Recording%202025-11-14%20023519.mp4)
-
+[Watch web demo video](./screenshots/Screen%20Recording%202025-11-14%20023519.mp4)
+[Web demo](./screenshots/Screenshot%202025-11-14%20023743.png)
+[Android demo](.)
