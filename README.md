@@ -10,6 +10,7 @@ The system captures camera frames (Android/Web), sends them through a native/JS 
 📂 Repository Structure
 
 flam-edge-viewer/
+
 │
 ├── android/
 │   └── EdgeViewer/          # Full Android Studio project
@@ -134,5 +135,5 @@ Camera/File → Canvas → ImageData → OpenCV.js
     → Canvas output
 
 🖼️ Screenshots
-[Watch demo video](.)
+[Watch demo video](./screenshots/Screen%20Recording%202025-11-14%20023519.mp4)
 
