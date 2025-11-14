@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Edge Viewer</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #121212; color: #fff; }
+    video, canvas { max-width: 100%; border: 2px solid #444; margin-top: 10px; }
+    button { padding: 12px 20px; margin-right: 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>Web Edge Viewer (OpenCV.js)</h1>
+
+  <button id="startCam">Start Camera</button>
+  <input type="file" id="file" accept="image/*" />
+  <button id="toggleProc">Start Processing</button>
+  <a id="download" download="edges.png">Download Output</a>
+
+  <br><br>
+
+  <video id="cam" autoplay playsinline width="640" height="480"></video>
+
+  <canvas id="srcCanvas"></canvas>
+  <canvas id="outCanvas"></canvas>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
