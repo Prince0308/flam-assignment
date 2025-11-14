@@ -1,6 +1,7 @@
 🔥 Flam – Real-Time Edge Detection Viewer
 
 Android NDK + OpenCV (C++) + Web (OpenCV.js)
+
 This project implements a real-time edge detection viewer for both Android and Web, as required in the Flam R&D Intern assignment.
 
 📌 Project Overview
@@ -33,50 +34,80 @@ flam-edge-viewer/
 │
 └── README.md
 
+🖼️ Screenshots
+[Watch web demo video](./screenshots/Screen%20Recording%202025-11-14%20023519.mp4)
+[Web demo](./screenshots/Screenshot%202025-11-14%20023743.png)
+[Android demo](./screenshots/WhatsApp%20Image%202025-11-14%20at%2002.37.03%20(1).jpeg)
+[Android demo](./screenshots/WhatsApp%20Image%202025-11-14%20at%2002.37.03.jpeg)
+
 🚀 Features
+
 ✅ Android Native (Kotlin + NDK)
+
 Camera2 API for high-speed frame capture
+
 Converts YUV_420_888 → NV21 (custom converter)
+
 Sends bytes to JNI (native-lib.cpp)
+
 Uses OpenCV C++ (cvtColor, Canny)
+
 Returns processed RGBA data back to Kotlin
+
 Displays on screen with OpenGL ES 2.0 (GLRenderer)
+
 Real-time FPS performance
 
 ✅ Web App (OpenCV.js + TypeScript)
+
 Built using Vite + TS
+
 Uses camera (getUserMedia) or file upload
+
 Converts HTML ImageData into OpenCV.Mat
 
 Performs:
 
 RGBA → Grayscale
+
 Canny edge detection
+
 RGBA output rendering
+
 Live canvas preview
+
 Option to download processed output
 
 🛠️ Tech Stack
 Android
 
 Kotlin
+
 Camera2 API
+
 OpenGL ES 2.0
+
 Android NDK (C++)
+
 OpenCV 4.x native C++
 
 Web
 
 Vite + TypeScript
+
 OpenCV.js (WASM)
+
 HTML Canvas
 
 📦 Setup Instructions
+
 📱 Android Setup (NDK + OpenCV)
+
 1️⃣ Install NDK
 
 Android Studio → SDK Manager → SDK Tools
 ✔ Check NDK
+
 ✔ Check CMake
 
 2️⃣ Add OpenCV Android SDK
@@ -84,6 +115,7 @@ Android Studio → SDK Manager → SDK Tools
 Download: https://opencv.org/releases/
 
 Extract → copy OpenCV-android-sdk/sdk/native folder
+
 Update path inside:
 
 CMakeLists.txt
@@ -133,9 +165,3 @@ Web Pipeline
 Camera/File → Canvas → ImageData → OpenCV.js
     → cvtColor() + Canny()
     → Canvas output
-
-🖼️ Screenshots
-[Watch web demo video](./screenshots/Screen%20Recording%202025-11-14%20023519.mp4)
-[Web demo](./screenshots/Screenshot%202025-11-14%20023743.png)
-[Android demo](./screenshots/WhatsApp%20Image%202025-11-14%20at%2002.37.03%20(1).jpeg)
-[Android demo](./screenshots/WhatsApp%20Image%202025-11-14%20at%2002.37.03.jpeg)
