@@ -173,4 +173,5 @@ Camera/File → Canvas → ImageData → OpenCV.js
 👩‍💻 Author
 
 Prince Jaiswal
+
 princejayswal9@gmail.com
