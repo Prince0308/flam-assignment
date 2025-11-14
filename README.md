@@ -165,3 +165,8 @@ Web Pipeline
 Camera/File → Canvas → ImageData → OpenCV.js
     → cvtColor() + Canny()
     → Canvas output
+    
+👩‍💻 Author
+
+Prince Jaiswal
+princejayswal9@gmail.com
