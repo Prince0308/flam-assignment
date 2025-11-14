@@ -138,4 +138,4 @@ Camera/File → Canvas → ImageData → OpenCV.js
 [Watch web demo video](./screenshots/Screen%20Recording%202025-11-14%20023519.mp4)
 [Web demo](./screenshots/Screenshot%202025-11-14%20023743.png)
 [Android demo](./screenshots/WhatsApp%20Image%202025-11-14%20at%2002.37.03%20(1).jpeg)
-(.)
+[Android demo](./screenshots/WhatsApp%20Image%202025-11-14%20at%2002.37.03.jpeg)
